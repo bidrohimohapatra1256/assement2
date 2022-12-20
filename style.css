@@ -1,0 +1,105 @@
+.head{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+ gap:5px;
+   
+   margin-top: 200px;
+   
+}
+.box1{
+ height: 200px;
+ width: 200px;
+ background-color: greenyellow;
+ border: 1px solid black;
+ text-align: center;
+ text-align: center;
+ color: white;
+ font-size: 20px;
+ transition-timing-function: ease-in-out;
+ 
+}
+.moveright{
+    transition: 1s;
+}
+
+.moveright:hover{
+    background-color: red;
+    transform: scaleX(2);
+}
+.moveleft{
+    transition: 1s;
+}
+.moveleft:hover{
+    background-color: red;
+    transform:scale();
+    height: 100px;
+}
+.moveup{
+    transition: 1s;
+    transition-timing-function:ease;
+}
+.moveup:hover{
+    background-color: red;
+    transform:scaleZ(100px);
+}
+.movedawn{
+    transition: 1s;
+}
+.movedawn:hover{
+    background-color: red;
+    transform:skew;
+    height: 100px;
+}
+.zoomin{
+    transition: 1s;
+    transition-timing-function: ease;
+}
+.zoomin:hover{
+    background-color: red;
+    transform: scale(2);
+}
+.zoomout{
+    transition:1s;
+    transition-timing-function: ease;
+}
+.zoomout:hover{
+    background-color: red;
+    transform: scale(0.2);
+   
+}
+.change{
+    transition:1s;
+    transition-timing-function: ease-in-out;
+}
+.change:hover{
+    background-color: red;
+    border-radius: 150px;
+}
+.updawon{
+    transition: 1s;   
+}
+.updawon:hover{
+    background-color: red;
+    transform: scaleY(2);
+}
+.leftright{
+    transition: 1s;   
+}
+.leftright:hover{
+    background-color: red;
+    transform: scaleX(2);
+}
+.rotate{
+    transition:1s;
+  transform: 1s;
+}
+.rotate:hover{
+    background-color: red;
+    transform: rotate(60deg);
+}
+@media screen and (max-width:500px) and (min-width:300px) {
+    .head{
+    grid-template-columns: auto auto auto;
+    }
+    
+}
